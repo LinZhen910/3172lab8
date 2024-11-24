@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input, select {
+    border: 2px solid #e5e7eb !important;
+    padding: 12px !important;
+    margin: 4px 0 !important;
+    width: 100% !important;
+    border-radius: 12px !important;
+    transition: all 0.3s ease !important;
+}
+
+input:focus, select:focus {
+    border-color: #93c5fd !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(147, 197, 253, 0.3) !important;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #374151;
+}
+
+button {
+    background-color: #111827 !important;
+    color: white !important;
+    padding: 12px 24px !important;
+    border-radius: 12px !important;
+    width: 100% !important;
+    margin-top: 24px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+button:hover {
+    background-color: #374151 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+
+.error-message {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 4px;
+}

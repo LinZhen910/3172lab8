@@ -64,9 +64,7 @@ const LoginForm = () => {
 
     return (
         <div className="form-container">
-            <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">
-                Registration Form
-            </h2>
+            <h2 className="text-2xl font-bold mb-6">Registration Form</h2>
             <form onSubmit={handleSubmit}>
                 <FormInput
                     label="First Name"
@@ -118,5 +116,4 @@ const LoginForm = () => {
         </div>
     );
 };
-
 export default LoginForm;

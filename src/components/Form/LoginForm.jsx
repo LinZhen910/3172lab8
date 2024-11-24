@@ -1,3 +1,4 @@
+// src/components/Form/LoginForm.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import FormInput from './FormInput';
@@ -52,15 +53,12 @@ const LoginForm = () => {
         return Object.keys(newErrors).length === 0;
     };
 
-    // Handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validateForm()) {
             navigate('/profile', { state: formData });
         }
     };
-
-    const seasons = ['Spring', 'Fall', 'Winter'];
 
     return (
         <div className="form-container">
@@ -109,11 +107,15 @@ const LoginForm = () => {
                     error={errors.season}
                 />
 
-                <button type="submit">
+                <button
+                    type="submit"
+                    className="w-full bg-black text-white py-2 px-4 rounded hover:bg-gray-800"
+                >
                     Submit
                 </button>
             </form>
         </div>
     );
 };
+
 export default LoginForm;
